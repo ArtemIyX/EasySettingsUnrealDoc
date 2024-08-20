@@ -1,8 +1,11 @@
 var class_u_easy_settings_subsystem =
 [
     [ "ApplySettings", "class_u_easy_settings_subsystem.html#a3f6c5011132f8da3db306954fabb10d0", null ],
+    [ "Deinitialize", "class_u_easy_settings_subsystem.html#a719a361dc76eacf97fdfe416ef46f3ba", null ],
     [ "GetAntialiasingMethod", "class_u_easy_settings_subsystem.html#a5edca865e19882edb007509019f91777", null ],
     [ "GetAntialiasingQuality", "class_u_easy_settings_subsystem.html#a9c0e4ede7a530e7a51d536d80226283c", null ],
+    [ "GetContainerSavePath", "class_u_easy_settings_subsystem.html#a1b4dd65b22251519d5622a67df61ee17", null ],
+    [ "GetContainerValue", "class_u_easy_settings_subsystem.html#aa8f6c3f09614583b2ff8414c16d23019", null ],
     [ "GetCurrentResolution", "class_u_easy_settings_subsystem.html#af098d9416258738e22f36178db1bf7f3", null ],
     [ "GetCurrentWindowedMode", "class_u_easy_settings_subsystem.html#a72b67e719dbd742be0ff1baf61da1630", null ],
     [ "GetDetailsQuality", "class_u_easy_settings_subsystem.html#a487ce49c0a2b80be87a7fe9675e8c4a6", null ],
@@ -15,8 +18,12 @@ var class_u_easy_settings_subsystem =
     [ "GetSupportedResolutions", "class_u_easy_settings_subsystem.html#ac90abe3082e2239c18f4eeec2346e9b7", null ],
     [ "GetTextureQuality", "class_u_easy_settings_subsystem.html#a38fb3e85f260706dd019d3849b28ad6f", null ],
     [ "GetVsyncEnabled", "class_u_easy_settings_subsystem.html#a079945fa77825f136f1b3da82aa06742", null ],
+    [ "InitContainer", "class_u_easy_settings_subsystem.html#ae7a121c687065636591f075fbf3924ed", null ],
+    [ "Initialize", "class_u_easy_settings_subsystem.html#a9ffd35b088a64d971bf89f69295eeb24", null ],
+    [ "SaveContainer", "class_u_easy_settings_subsystem.html#a6ef89c989a59b7f8a9b006b5be933928", null ],
     [ "SetAntialiasingMethod", "class_u_easy_settings_subsystem.html#ae0419c9639f3bb7490fe3404405a6f62", null ],
     [ "SetAntialiasingQuality", "class_u_easy_settings_subsystem.html#a79ccbb5f1296c3e2d37e4094452d2ae6", null ],
+    [ "SetContainerValue", "class_u_easy_settings_subsystem.html#a8a33711dd61cb5873289baf453a43e33", null ],
     [ "SetDetailsQuality", "class_u_easy_settings_subsystem.html#a362fe25993222d591d706baa5ffacfa4", null ],
     [ "SetEffectsQuality", "class_u_easy_settings_subsystem.html#af3c0163bf90801fcdf80c434728710af", null ],
     [ "SetFrameRateLimit", "class_u_easy_settings_subsystem.html#a0f7e137ebfc2f835f04a8ab96d052c7b", null ],
@@ -25,5 +32,6 @@ var class_u_easy_settings_subsystem =
     [ "SetShadowsQuality", "class_u_easy_settings_subsystem.html#a6de09c8ab6933df4e2200b82312b1156", null ],
     [ "SetTextureQuality", "class_u_easy_settings_subsystem.html#ac0ecf62d0eb031165ade8122c99a0a3a", null ],
     [ "SetVsyncEnabled", "class_u_easy_settings_subsystem.html#a5005af92233ee242cb271947362ab450", null ],
-    [ "SetWindowedMode", "class_u_easy_settings_subsystem.html#a19a2ffca004092bf85d40055c054a87d", null ]
+    [ "SetWindowedMode", "class_u_easy_settings_subsystem.html#a19a2ffca004092bf85d40055c054a87d", null ],
+    [ "SettingsSetter", "class_u_easy_settings_subsystem.html#ac90ac6c9280f68a1db1c0a19d8466177", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ueasysettingssubsystem_0',['UEasySettingsSubsystem',['../class_u_easy_settings_subsystem.html',1,'']]]
+  ['feasysettingsmodule_0',['FEasySettingsModule',['../class_f_easy_settings_module.html',1,'']]]
 ];

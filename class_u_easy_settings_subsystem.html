@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Easy Settings Plugin<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">Easy Settings Plugin<span id="projectnumber">&#160;v1.0.1</span>
    </div>
    <div id="projectbrief">EasySettings</div>
   </td>
@@ -99,6 +99,8 @@ $(function(){initNavTree('class_u_easy_settings_subsystem.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_u_easy_settings_subsystem-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">UEasySettingsSubsystem Class Reference</div></div>
 </div><!--header-->
@@ -108,9 +110,13 @@ $(function(){initNavTree('class_u_easy_settings_subsystem.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0461e9ebf1a06ad797c34bedbe7f4d3e" id="r_a0461e9ebf1a06ad797c34bedbe7f4d3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0461e9ebf1a06ad797c34bedbe7f4d3e">SetSettingsQuality</a> (ESettingsType InSettingsType=ESettingsType::TYPE_Details, int32 InQuality=3, bool bApply=true)</td></tr>
+<tr class="memitem:a9ffd35b088a64d971bf89f69295eeb24" id="r_a9ffd35b088a64d971bf89f69295eeb24"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ffd35b088a64d971bf89f69295eeb24">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="separator:a9ffd35b088a64d971bf89f69295eeb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719a361dc76eacf97fdfe416ef46f3ba" id="r_a719a361dc76eacf97fdfe416ef46f3ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a719a361dc76eacf97fdfe416ef46f3ba">Deinitialize</a> () override</td></tr>
+<tr class="separator:a719a361dc76eacf97fdfe416ef46f3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0461e9ebf1a06ad797c34bedbe7f4d3e" id="r_a0461e9ebf1a06ad797c34bedbe7f4d3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0461e9ebf1a06ad797c34bedbe7f4d3e">SetSettingsQuality</a> (<a class="el" href="_easy_settings_subsystem_8h.html#a2c9c7466e57b0b2550c18ca4f622b234">ESettingsType</a> InSettingsType=ESettingsType::TYPE_Details, int32 InQuality=3, bool bApply=true)</td></tr>
 <tr class="separator:a0461e9ebf1a06ad797c34bedbe7f4d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab163f21c13bc785727cb64cc58e9eb" id="r_acab163f21c13bc785727cb64cc58e9eb"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acab163f21c13bc785727cb64cc58e9eb">GetSettingsQuality</a> (ESettingsType InSettingsType=ESettingsType::TYPE_Details) const</td></tr>
+<tr class="memitem:acab163f21c13bc785727cb64cc58e9eb" id="r_acab163f21c13bc785727cb64cc58e9eb"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acab163f21c13bc785727cb64cc58e9eb">GetSettingsQuality</a> (<a class="el" href="_easy_settings_subsystem_8h.html#a2c9c7466e57b0b2550c18ca4f622b234">ESettingsType</a> InSettingsType=ESettingsType::TYPE_Details) const</td></tr>
 <tr class="separator:acab163f21c13bc785727cb64cc58e9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0419c9639f3bb7490fe3404405a6f62" id="r_ae0419c9639f3bb7490fe3404405a6f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0419c9639f3bb7490fe3404405a6f62">SetAntialiasingMethod</a> (APlayerController *InController, int32 InValue, bool bApply=true)</td></tr>
 <tr class="separator:ae0419c9639f3bb7490fe3404405a6f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,10 +162,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a61e715b3eeec1cdcd1724647a33478b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac90abe3082e2239c18f4eeec2346e9b7" id="r_ac90abe3082e2239c18f4eeec2346e9b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac90abe3082e2239c18f4eeec2346e9b7">GetSupportedResolutions</a> (TArray&lt; FIntPoint &gt; &amp;OutResult, TEnumAsByte&lt; EWindowMode::Type &gt; InWindowMode=EWindowMode::Type::Windowed)</td></tr>
 <tr class="separator:ac90abe3082e2239c18f4eeec2346e9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a33711dd61cb5873289baf453a43e33" id="r_a8a33711dd61cb5873289baf453a43e33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a33711dd61cb5873289baf453a43e33">SetContainerValue</a> (uint8 InCategory, float InValue, bool bApply=true)</td></tr>
+<tr class="memdesc:a8a33711dd61cb5873289baf453a43e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the container value for a specific category.  <br /></td></tr>
+<tr class="separator:a8a33711dd61cb5873289baf453a43e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f6c3f09614583b2ff8414c16d23019" id="r_aa8f6c3f09614583b2ff8414c16d23019"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f6c3f09614583b2ff8414c16d23019">GetContainerValue</a> (uint8 InCategory, float &amp;OutValue)</td></tr>
+<tr class="memdesc:aa8f6c3f09614583b2ff8414c16d23019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the container value for a specific category.  <br /></td></tr>
+<tr class="separator:aa8f6c3f09614583b2ff8414c16d23019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6c5011132f8da3db306954fabb10d0" id="r_a3f6c5011132f8da3db306954fabb10d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6c5011132f8da3db306954fabb10d0">ApplySettings</a> ()</td></tr>
 <tr class="separator:a3f6c5011132f8da3db306954fabb10d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93982791e081b8fe2bf1877b46c311dd" id="r_a93982791e081b8fe2bf1877b46c311dd"><td class="memItemLeft" align="right" valign="top">UGameUserSettings *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93982791e081b8fe2bf1877b46c311dd">GetGameUserSettings</a> () const</td></tr>
 <tr class="separator:a93982791e081b8fe2bf1877b46c311dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6ef89c989a59b7f8a9b006b5be933928" id="r_a6ef89c989a59b7f8a9b006b5be933928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ef89c989a59b7f8a9b006b5be933928">SaveContainer</a> ()</td></tr>
+<tr class="separator:a6ef89c989a59b7f8a9b006b5be933928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a121c687065636591f075fbf3924ed" id="r_ae7a121c687065636591f075fbf3924ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7a121c687065636591f075fbf3924ed">InitContainer</a> ()</td></tr>
+<tr class="separator:ae7a121c687065636591f075fbf3924ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4dd65b22251519d5622a67df61ee17" id="r_a1b4dd65b22251519d5622a67df61ee17"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b4dd65b22251519d5622a67df61ee17">GetContainerSavePath</a> ()</td></tr>
+<tr class="separator:a1b4dd65b22251519d5622a67df61ee17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac90ac6c9280f68a1db1c0a19d8466177" id="r_ac90ac6c9280f68a1db1c0a19d8466177"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_easy_settings_setter.html">UEasySettingsSetter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac90ac6c9280f68a1db1c0a19d8466177">SettingsSetter</a></td></tr>
+<tr class="separator:ac90ac6c9280f68a1db1c0a19d8466177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_u_easy_settings_subsystem.html">UEasySettingsSubsystem</a></p>
@@ -180,6 +206,31 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Applies the current settings, saving them to the user's configuration file. </p>
+
+</div>
+</div>
+<a id="a719a361dc76eacf97fdfe416ef46f3ba" name="a719a361dc76eacf97fdfe416ef46f3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719a361dc76eacf97fdfe416ef46f3ba">&#9670;&#160;</a></span>Deinitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UEasySettingsSubsystem::Deinitialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -218,6 +269,64 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieves the current Anti-Aliasing quality level.</p>
 <dl class="section return"><dt>Returns</dt><dd>The current Anti-Aliasing quality level. </dd></dl>
+
+</div>
+</div>
+<a id="a1b4dd65b22251519d5622a67df61ee17" name="a1b4dd65b22251519d5622a67df61ee17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4dd65b22251519d5622a67df61ee17">&#9670;&#160;</a></span>GetContainerSavePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FString UEasySettingsSubsystem::GetContainerSavePath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8f6c3f09614583b2ff8414c16d23019" name="aa8f6c3f09614583b2ff8414c16d23019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f6c3f09614583b2ff8414c16d23019">&#9670;&#160;</a></span>GetContainerValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UEasySettingsSubsystem::GetContainerValue </td>
+          <td>(</td>
+          <td class="paramtype">uint8</td>          <td class="paramname"><span class="paramname"><em>InCategory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>OutValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the container value for a specific category. </p>
+<p>This method gets the float value for a given category in the container.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InCategory</td><td>The category key (<code>uint8</code>) for which to get the value. </td></tr>
+    <tr><td class="paramname">OutValue</td><td>A reference to store the retrieved float value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the value was successfully retrieved; false otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method is intended to be used within the GameSettingsSubsystem. </dd></dl>
 
 </div>
 </div>
@@ -380,7 +489,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">int32 UEasySettingsSubsystem::GetSettingsQuality </td>
           <td>(</td>
-          <td class="paramtype">ESettingsType</td>          <td class="paramname"><span class="paramname"><em>InSettingsType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">ESettingsType::TYPE_Details</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_easy_settings_subsystem_8h.html#a2c9c7466e57b0b2550c18ca4f622b234">ESettingsType</a></td>          <td class="paramname"><span class="paramname"><em>InSettingsType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">ESettingsType::TYPE_Details</span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -482,6 +591,81 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae7a121c687065636591f075fbf3924ed" name="ae7a121c687065636591f075fbf3924ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a121c687065636591f075fbf3924ed">&#9670;&#160;</a></span>InitContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UEasySettingsSubsystem::InitContainer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ffd35b088a64d971bf89f69295eeb24" name="a9ffd35b088a64d971bf89f69295eeb24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ffd35b088a64d971bf89f69295eeb24">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UEasySettingsSubsystem::Initialize </td>
+          <td>(</td>
+          <td class="paramtype">FSubsystemCollectionBase &amp;</td>          <td class="paramname"><span class="paramname"><em>Collection</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ef89c989a59b7f8a9b006b5be933928" name="a6ef89c989a59b7f8a9b006b5be933928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef89c989a59b7f8a9b006b5be933928">&#9670;&#160;</a></span>SaveContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UEasySettingsSubsystem::SaveContainer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae0419c9639f3bb7490fe3404405a6f62" name="ae0419c9639f3bb7490fe3404405a6f62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0419c9639f3bb7490fe3404405a6f62">&#9670;&#160;</a></span>SetAntialiasingMethod()</h2>
 
@@ -543,6 +727,44 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8a33711dd61cb5873289baf453a43e33" name="a8a33711dd61cb5873289baf453a43e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a33711dd61cb5873289baf453a43e33">&#9670;&#160;</a></span>SetContainerValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UEasySettingsSubsystem::SetContainerValue </td>
+          <td>(</td>
+          <td class="paramtype">uint8</td>          <td class="paramname"><span class="paramname"><em>InCategory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>InValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bApply</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the container value for a specific category. </p>
+<p>This method sets the float value for a given category in the container. If the <code>bApply</code> flag is true, the settings are applied immediately after setting the value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InCategory</td><td>The category key (<code>uint8</code>) for which to set the value. </td></tr>
+    <tr><td class="paramname">InValue</td><td>The float value to set for the category. </td></tr>
+    <tr><td class="paramname">bApply</td><td>If true, applies the settings immediately after setting the value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This method is intended to be used within the GameSettingsSubsystem. </dd></dl>
 
 </div>
 </div>
@@ -671,7 +893,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void UEasySettingsSubsystem::SetSettingsQuality </td>
           <td>(</td>
-          <td class="paramtype">ESettingsType</td>          <td class="paramname"><span class="paramname"><em>InSettingsType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">ESettingsType::TYPE_Details</span>, </td>
+          <td class="paramtype"><a class="el" href="_easy_settings_subsystem_8h.html#a2c9c7466e57b0b2550c18ca4f622b234">ESettingsType</a></td>          <td class="paramname"><span class="paramname"><em>InSettingsType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">ESettingsType::TYPE_Details</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -813,8 +1035,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac90ac6c9280f68a1db1c0a19d8466177" name="ac90ac6c9280f68a1db1c0a19d8466177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac90ac6c9280f68a1db1c0a19d8466177">&#9670;&#160;</a></span>SettingsSetter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_u_easy_settings_setter.html">UEasySettingsSetter</a>* UEasySettingsSubsystem::SettingsSetter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Source/EasySettings/Public/Subsystems/<a class="el" href="_easy_settings_subsystem_8h_source.html">EasySettingsSubsystem.h</a></li>
+<li>Public/Subsystems/<a class="el" href="_easy_settings_subsystem_8h_source.html">EasySettingsSubsystem.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
